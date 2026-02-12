@@ -465,6 +465,13 @@ ninja.data = [{
           window.open("/sharkspicy/assets/pdf/example_pdf.pdf", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/SharkSpicy-NLP", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
