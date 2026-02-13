@@ -1,0 +1,18 @@
+# Add your honors and awards here.
+# Example:
+# - title: National Scholarship
+#   organization: Ministry of Education
+#   period: 2022
+#   details: Ranked top 1% in the department.
+
+- title: National Scholarship
+  # organization: Ministry of Education
+  period: 2022
+
+- title: Honorable Mention, Mathematical Contest in Modeling (MCM), USA
+  # organization: COMAP
+  period: 2022
+
+- title: National-level Outstanding Project, Undergraduate Innovation and Entrepreneurship Training Program
+  # organization: Ministry of Education
+  period: 2021

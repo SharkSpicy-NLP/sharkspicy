@@ -137,6 +137,27 @@ layout: default
           {% endif %}
         </section>
       {% endif %}
+
+      <!-- Honors and Awards -->
+      {% if page.honors_awards %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            🏆 Honors and Awards
+          </h2>
+          {% if site.data.honors_awards and site.data.honors_awards.size > 0 %}
+            <ul>
+              {% for award in site.data.honors_awards %}
+                <li>
+                  <strong>{{ award.title }}</strong>
+                  {% if award.organization %}, {{ award.organization }}{% endif %}
+                  {% if award.period %} ({{ award.period }}){% endif %}
+                  {% if award.details %}<br />{{ award.details }}{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </section>
+      {% endif %}
     </div>
 
     <!-- Social -->
