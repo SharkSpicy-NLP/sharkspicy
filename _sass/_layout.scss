@@ -54,19 +54,16 @@ body.sticky-bottom-footer {
   }
 
   .internship-venue-tag {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     background-color: var(--global-theme-color);
     color: var(--global-card-bg-color);
     border-radius: 0.25rem;
-    padding: 0.05rem 0.4rem;
+    padding: 0.12rem 0.4rem;
     margin-left: 0.15rem;
     font-size: 0.75rem;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1;
     vertical-align: middle;
-    position: relative;
-    top: -0.08em;
   }
 }
 
