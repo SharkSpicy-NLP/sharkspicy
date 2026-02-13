@@ -1,9 +1,15 @@
 - role: LLM Research Intern
-  organization: Baidu
+  organization: MEG, Baidu Inc.
   period: 2025.03-2025.08
-  details: Conducted research on large-scale knowledge injection and retrieval mechanisms for LLMs, developing algorithms to map knowledge bases into KV caches and conducting extensive real-world experiments to enhance inference capabilities under computational constraints.
+  details: Developed scalable knowledge-to-KV cache mapping and attention training algorithms for LLMs, enabling efficient knowledge injection under computation constraints.
+  paper_title: SR-KI
+  paper_url: https://arxiv.org/pdf/2511.06446
+  venue: AAAI 2026
 
 - role: NLP Research Intern
-  organization: Wenge
+  organization: AI R&D Center, Beijing Wenge Technology Co., Ltd.
   period: 2024.04-2025.02
-  details: Led the construction of high-quality datasets for TableQA and long-context NLP tasks, improving model performance through automated evaluation frameworks and multi-document question answering, with significant performance improvements in key benchmarks.
+  details: Built high-quality TableQA and long-context QA benchmarks with automated evaluation pipelines, significantly improving model performance on key benchmarks.
+  paper_title: TableEval
+  paper_url: https://aclanthology.org/2025.emnlp-main.363.pdf
+  venue: EMNLP 2025
