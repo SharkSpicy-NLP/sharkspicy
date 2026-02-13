@@ -40,90 +40,104 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">🔥 News</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Educations -->
-    {% if page.educations %}
-      <h2>
-        🎓 Educations
-      </h2>
-      {% if site.data.educations and site.data.educations.size > 0 %}
-        <ul>
-          {% for edu in site.data.educations %}
-            <li>
-              {% if edu.logos and edu.logos.size > 0 %}
-                <span>
-                  {% for logo in edu.logos %}
-                    {% assign logo_url = logo.url %}
-                    {% if logo_url contains '://' %}
-                      {% assign logo_src = logo_url %}
-                    {% else %}
-                      {% assign logo_src = logo_url | relative_url %}
-                    {% endif %}
-                    <img
-                      src="{{ logo_src }}"
-                      alt="{{ logo.alt }}"
-                      style="height: 1.2rem; width: 1.2rem; object-fit: contain; margin-right: 0.35rem; vertical-align: text-bottom;"
-                    />
-                  {% endfor %}
-                </span>
-              {% endif %}
-              <strong>{{ edu.degree }}</strong>, {{ edu.school }}
-              {% if edu.period %} ({{ edu.period }}){% endif %}
-              {% if edu.details %}<br />{{ edu.details }}{% endif %}
-            </li>
-          {% endfor %}
-        </ul>
+    <div class="home-sections">
+      <!-- News -->
+      {% if page.announcements and page.announcements.enabled %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            <a href="{{ '/news/' | relative_url }}" style="color: inherit">🔥 News</a>
+          </h2>
+          {% include news.liquid limit=true %}
+        </section>
       {% endif %}
-    {% endif %}
 
-    <!-- Publications -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📑 Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Collaborative Publications -->
-    {% if page.collaborative_papers %}
-      <h2>
-        🤝 Collaborative Publications
-      </h2>
-      {% include collaborative_papers.liquid %}
-    {% endif %}
-
-    <!-- Internships -->
-    {% if page.internships %}
-      <h2>
-        💼 Internships
-      </h2>
-      {% if site.data.internships and site.data.internships.size > 0 %}
-        <ul>
-          {% for internship in site.data.internships %}
-            <li>
-              <strong>{{ internship.role }}</strong>, {{ internship.organization }}
-              {% if internship.period %} ({{ internship.period }}){% endif %}
-              {% if internship.details %}<br />{{ internship.details }}{% endif %}
-            </li>
-          {% endfor %}
-        </ul>
+      <!-- Latest posts -->
+      {% if page.latest_posts and page.latest_posts.enabled %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+          </h2>
+          {% include latest_posts.liquid %}
+        </section>
       {% endif %}
-    {% endif %}
+
+      <!-- Educations -->
+      {% if page.educations %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            🎓 Educations
+          </h2>
+          {% if site.data.educations and site.data.educations.size > 0 %}
+            <ul>
+              {% for edu in site.data.educations %}
+                <li>
+                  {% if edu.logos and edu.logos.size > 0 %}
+                    <span>
+                      {% for logo in edu.logos %}
+                        {% assign logo_url = logo.url %}
+                        {% if logo_url contains '://' %}
+                          {% assign logo_src = logo_url %}
+                        {% else %}
+                          {% assign logo_src = logo_url | relative_url %}
+                        {% endif %}
+                        <img
+                          src="{{ logo_src }}"
+                          alt="{{ logo.alt }}"
+                          style="height: 1.2rem; width: 1.2rem; object-fit: contain; margin-right: 0.35rem; vertical-align: text-bottom;"
+                        />
+                      {% endfor %}
+                    </span>
+                  {% endif %}
+                  <strong>{{ edu.degree }}</strong>, {{ edu.school }}
+                  {% if edu.period %} ({{ edu.period }}){% endif %}
+                  {% if edu.details %}<br />{{ edu.details }}{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </section>
+      {% endif %}
+
+      <!-- Publications -->
+      {% if page.selected_papers %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📑 Publications</a>
+          </h2>
+          {% include selected_papers.liquid %}
+        </section>
+      {% endif %}
+
+      <!-- Collaborative Publications -->
+      {% if page.collaborative_papers %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            🤝 Collaborative Publications
+          </h2>
+          {% include collaborative_papers.liquid %}
+        </section>
+      {% endif %}
+
+      <!-- Internships -->
+      {% if page.internships %}
+        <section class="home-section">
+          <h2 class="home-section-title">
+            💼 Internships
+          </h2>
+          {% if site.data.internships and site.data.internships.size > 0 %}
+            <ul>
+              {% for internship in site.data.internships %}
+                <li>
+                  <strong>{{ internship.role }}</strong>, {{ internship.organization }}
+                  {% if internship.period %} ({{ internship.period }}){% endif %}
+                  {% if internship.details %}<br />{{ internship.details }}{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </section>
+      {% endif %}
+    </div>
 
     <!-- Social -->
     {% if page.social %}

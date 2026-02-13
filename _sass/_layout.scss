@@ -44,6 +44,16 @@ body.sticky-bottom-footer {
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples
 
+.home-sections {
+  .home-section {
+    margin-top: 2.25rem;
+  }
+
+  .home-section-title {
+    margin-bottom: 1rem;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
