@@ -3,113 +3,174 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@misc{yu2025srkiscalablerealtimeknowledge,
+    abbr = {AAAI},
+    title={SR-KI: Scalable and Real-Time Knowledge Integration into LLMs via Supervised Attention}, 
+    author={Bohan Yu and Wei Huang and Kang Liu},
+    year={2025},
+    eprint={2511.06446},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2511.06446}, 
+    selected = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@inproceedings{yu-chai-2025-evolkv,
+    abbr = {EMNLP-Findings},
+    title = "{E}vol{KV}: Evolutionary {KV} Cache Compression for {LLM} Inference",
+    author = "Yu, Bohan  and
+      Chai, Yekun",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.88/",
+    doi = "10.18653/v1/2025.findings-emnlp.88",
+    pages = "1673--1689",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Existing key-value (KV) cache compression methods typically rely on heuristics, such as uniform cache allocation across layers or static eviction policies, however, they ignore the critical interplays among layer-specific feature patterns and task performance, which can lead to degraded generalization. In this paper, we propose EvolKV, an adaptive framework for layer-wise, task-driven KV cache compression that jointly optimizes the memory efficiency and task performance. By reformulating cache allocation as a multi-objective optimization problem, EvolKV leverages evolutionary search to dynamically configure layer budgets while directly maximizing downstream performance. Extensive experiments on 11 tasks demonstrate that our approach outperforms all baseline methods across a wide range of KV cache budgets on long-context tasks and surpasses heuristic baselines by up to 7 percentage points on GSM8K. Notably, EvolKV achieves superior performance over the full KV cache setting on code completion while utilizing only 1.5{\%} of the original budget, suggesting the untapped potential in learned compression strategies for KV cache budget allocation.",
+    selected = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@inproceedings{zhu-etal-2025-tableeval,
+    abbr = {EMNLP},
+    title = "{T}able{E}val: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+    author = "Zhu, Junnan  and
+      Wang, Jingyi  and
+      Yu, Bohan  and
+      Wu, Xiaoyu  and
+      Li, Junbo  and
+      Wang, Lei  and
+      Xu, Nan",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.363/",
+    doi = "10.18653/v1/2025.emnlp-main.363",
+    pages = "7126--7146",
+    ISBN = "979-8-89176-332-6",
+    abstract = "LLMs have shown impressive progress in natural language processing. However, they still face significant challenges in TableQA, where real-world complexities such as diverse table structures, multilingual data, and domain-specific reasoning are crucial. Existing TableQA benchmarks are often limited by their focus on simple flat tables and suffer from data leakage. Furthermore, most benchmarks are monolingual and fail to capture the cross-lingual and cross-domain variability in practical applications. To address these limitations, we introduce TableEval, a new benchmark designed to evaluate LLMs on realistic TableQA tasks. Specifically, TableEval includes tables with various structures (such as concise, hierarchical, and nested tables) collected from four domains (including government, finance, academia, and industry reports). Besides, TableEval features cross-lingual scenarios with tables in Simplified Chinese, Traditional Chinese, and English. To minimize the risk of data leakage, we collect all data from recent real-world documents. Considering that existing TableQA metrics fail to capture semantic accuracy, we further propose SEAT, a new evaluation framework that assesses the alignment between model responses and reference answers at the sub-question level. Experimental results have shown that SEAT achieves high agreement with human judgment. Extensive experiments on TableEval reveal critical gaps in the ability of state-of-the-art LLMs to handle these complex, real-world TableQA tasks, offering insights for future improvements.",
+    selected = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
+% @book{einstein1920relativity,
+%   title     = {Relativity: the Special and General Theory},
+%   author    = {Einstein, Albert},
+%   year      = {1920},
+%   publisher = {Methuen & Co Ltd},
+%   html      = {relativity.html}
+% }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
+% @book{einstein1956investigations,
+%   bibtex_show = {true},
+%   title       = {Investigations on the Theory of the Brownian Movement},
+%   author      = {Einstein, Albert},
+%   year        = {1956},
+%   publisher   = {Courier Corporation},
+%   preview     = {brownian-motion.gif}
+% }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
+% @article{einstein1950meaning,
+%   abbr        = {AJP},
+%   bibtex_show = {true},
+%   title       = {The meaning of relativity},
+%   author      = {Einstein, Albert and Taub, AH},
+%   journal     = {American Journal of Physics},
+%   volume      = {18},
+%   number      = {6},
+%   pages       = {403--404},
+%   year        = {1950},
+%   publisher   = {American Association of Physics Teachers}
+% }
 
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
+% @article{PhysRev.47.777,
+%   abbr              = {PhysRev},
+%   title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
+%   author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
+%   abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+%   journal           = {Phys. Rev.},
+%   location          = {New Jersey},
+%   volume            = {47},
+%   issue             = {10},
+%   pages             = {777--780},
+%   numpages          = {0},
+%   year              = {1935},
+%   month             = {May},
+%   publisher         = aps,
+%   doi               = {10.1103/PhysRev.47.777},
+%   url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
+%   html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+%   pdf               = {example_pdf.pdf},
+%   altmetric         = {248277},
+%   dimensions        = {true},
+%   google_scholar_id = {qyhmnyLat1gC},
+%   video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
+%   additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
+%   annotation        = {* Example use of superscripts<br>† Albert Einstein},
+%   selected          = {true},
+%   inspirehep_id     = {3255}
+% }
 
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
+% @article{einstein1905molekularkinetischen,
+%   title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
+%   author    = {Einstein, A.},
+%   journal   = {Annalen der physik},
+%   volume    = {322},
+%   number    = {8},
+%   pages     = {549--560},
+%   year      = {1905},
+%   publisher = {Wiley Online Library}
+% }
 
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
-}
+% @article{einstein1905movement,
+%   abbr    = {Ann. Phys.},
+%   title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
+%   author  = {Einstein, A.},
+%   journal = {Ann. Phys.},
+%   volume  = {17},
+%   pages   = {549--560},
+%   year    = {1905}
+% }
+
+% @article{einstein1905electrodynamics,
+%   title  = {On the electrodynamics of moving bodies},
+%   author = {Einstein, A.},
+%   year   = {1905}
+% }
+
+% @article{einstein1905photoelectriceffect,
+%   bibtex_show = {true},
+%   abbr        = {Ann. Phys.},
+%   title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
+%   author      = {Albert Einstein},
+%   abstract    = {This is the abstract text.},
+%   journal     = {Ann. Phys.},
+%   volume      = {322},
+%   number      = {6},
+%   pages       = {132--148},
+%   year        = {1905},
+%   doi         = {10.1002/andp.19053220607},
+%   award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
+%   award_name  = {Nobel Prize}
+% }
+
+% @book{przibram1967letters,
+%   bibtex_show = {true},
+%   title       = {Letters on wave mechanics},
+%   author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
+%   year        = {1967},
+%   publisher   = {Vision},
+%   preview     = {wave-mechanics.gif},
+%   abbr        = {Vision}
+% }
