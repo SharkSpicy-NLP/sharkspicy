@@ -128,25 +128,9 @@ layout: default
             <ul>
               {% for internship in site.data.internships %}
                 <li>
-                  {% if internship.venue %}
-                    <span class="internship-venue-badge">
-                      {% if internship.paper_url %}
-                        <a href="{{ internship.paper_url }}" target="_blank" rel="noopener noreferrer">{{ internship.venue }}</a>
-                      {% else %}
-                        {{ internship.venue }}
-                      {% endif %}
-                    </span>
-                  {% endif %}
                   <strong>{{ internship.role }}</strong>, {{ internship.organization }}
                   {% if internship.period %} ({{ internship.period }}){% endif %}
                   {% if internship.details %}<br />{{ internship.details }}{% endif %}
-                  {% if internship.paper_title and internship.paper_url %}
-                    <br />
-                    Paper:
-                    <a href="{{ internship.paper_url }}" target="_blank" rel="noopener noreferrer">
-                      {{ internship.paper_title }}
-                    </a>
-                  {% endif %}
                 </li>
               {% endfor %}
             </ul>
