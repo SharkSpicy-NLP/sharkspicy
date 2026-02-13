@@ -15,54 +15,46 @@
     selected = {true}
 }
 
-@inproceedings{yu-chai-2025-evolkv,
-    abbr = {EMNLP-Findings},
-    title = "{E}vol{KV}: Evolutionary {KV} Cache Compression for {LLM} Inference",
-    author = "Bohan Yu  and
-      Yekun Chai",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.findings-emnlp.88/",
-    doi = "10.18653/v1/2025.findings-emnlp.88",
-    pages = "1673--1689",
-    ISBN = "979-8-89176-335-7",
-    abstract = "Existing key-value (KV) cache compression methods typically rely on heuristics, such as uniform cache allocation across layers or static eviction policies, however, they ignore the critical interplays among layer-specific feature patterns and task performance, which can lead to degraded generalization. In this paper, we propose EvolKV, an adaptive framework for layer-wise, task-driven KV cache compression that jointly optimizes the memory efficiency and task performance. By reformulating cache allocation as a multi-objective optimization problem, EvolKV leverages evolutionary search to dynamically configure layer budgets while directly maximizing downstream performance. Extensive experiments on 11 tasks demonstrate that our approach outperforms all baseline methods across a wide range of KV cache budgets on long-context tasks and surpasses heuristic baselines by up to 7 percentage points on GSM8K. Notably, EvolKV achieves superior performance over the full KV cache setting on code completion while utilizing only 1.5{\%} of the original budget, suggesting the untapped potential in learned compression strategies for KV cache budget allocation.",
-    selected = {true}
-}
+% @inproceedings{yu-chai-2025-evolkv,
+%     abbr = {EMNLP-Findings},
+%     title = "{E}vol{KV}: Evolutionary {KV} Cache Compression for {LLM} Inference",
+%     author = "Bohan Yu  and
+%       Yekun Chai",
+%     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+%     month = nov,
+%     year = "2025",
+%     address = "Suzhou, China",
+%     publisher = "Association for Computational Linguistics",
+%     url = "https://aclanthology.org/2025.findings-emnlp.88/",
+%     doi = "10.18653/v1/2025.findings-emnlp.88",
+%     pages = "1673--1689",
+%     ISBN = "979-8-89176-335-7",
+%     abstract = "Existing key-value (KV) cache compression methods typically rely on heuristics, such as uniform cache allocation across layers or static eviction policies, however, they ignore the critical interplays among layer-specific feature patterns and task performance, which can lead to degraded generalization. In this paper, we propose EvolKV, an adaptive framework for layer-wise, task-driven KV cache compression that jointly optimizes the memory efficiency and task performance. By reformulating cache allocation as a multi-objective optimization problem, EvolKV leverages evolutionary search to dynamically configure layer budgets while directly maximizing downstream performance. Extensive experiments on 11 tasks demonstrate that our approach outperforms all baseline methods across a wide range of KV cache budgets on long-context tasks and surpasses heuristic baselines by up to 7 percentage points on GSM8K. Notably, EvolKV achieves superior performance over the full KV cache setting on code completion while utilizing only 1.5{\%} of the original budget, suggesting the untapped potential in learned compression strategies for KV cache budget allocation.",
+%     selected = {true}
+% }
 
-@inproceedings{zhu-etal-2025-tableeval,
-    abbr = {EMNLP},
-    title = "{T}able{E}val: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
-    author = "Junnan Zhu  and
-      Jingyi Wang  and
-      Bohan Yu  and
-      Xiaoyu Wu  and
-      Junbo Li  and
-      Lei Wang  and
-      Nan Xu",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.emnlp-main.363/",
-    doi = "10.18653/v1/2025.emnlp-main.363",
-    pages = "7126--7146",
-    ISBN = "979-8-89176-332-6",
-    abstract = "LLMs have shown impressive progress in natural language processing. However, they still face significant challenges in TableQA, where real-world complexities such as diverse table structures, multilingual data, and domain-specific reasoning are crucial. Existing TableQA benchmarks are often limited by their focus on simple flat tables and suffer from data leakage. Furthermore, most benchmarks are monolingual and fail to capture the cross-lingual and cross-domain variability in practical applications. To address these limitations, we introduce TableEval, a new benchmark designed to evaluate LLMs on realistic TableQA tasks. Specifically, TableEval includes tables with various structures (such as concise, hierarchical, and nested tables) collected from four domains (including government, finance, academia, and industry reports). Besides, TableEval features cross-lingual scenarios with tables in Simplified Chinese, Traditional Chinese, and English. To minimize the risk of data leakage, we collect all data from recent real-world documents. Considering that existing TableQA metrics fail to capture semantic accuracy, we further propose SEAT, a new evaluation framework that assesses the alignment between model responses and reference answers at the sub-question level. Experimental results have shown that SEAT achieves high agreement with human judgment. Extensive experiments on TableEval reveal critical gaps in the ability of state-of-the-art LLMs to handle these complex, real-world TableQA tasks, offering insights for future improvements.",
-    selected = {true}
-}
+% @inproceedings{zhu-etal-2025-tableeval,
+%     abbr = {EMNLP},
+%     title = "{T}able{E}val: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+%     author = "Junnan Zhu  and
+%       Jingyi Wang  and
+%       Bohan Yu  and
+%       Xiaoyu Wu  and
+%       Junbo Li  and
+%       Lei Wang  and
+%       Nan Xu",
+%     booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+%     month = nov,
+%     year = "2025",
+%     address = "Suzhou, China",
+%     publisher = "Association for Computational Linguistics",
+%     url = "https://aclanthology.org/2025.emnlp-main.363/",
+%     doi = "10.18653/v1/2025.emnlp-main.363",
+%     pages = "7126--7146",
+%     ISBN = "979-8-89176-332-6",
+%     abstract = "LLMs have shown impressive progress in natural language processing. However, they still face significant challenges in TableQA, where real-world complexities such as diverse table structures, multilingual data, and domain-specific reasoning are crucial. Existing TableQA benchmarks are often limited by their focus on simple flat tables and suffer from data leakage. Furthermore, most benchmarks are monolingual and fail to capture the cross-lingual and cross-domain variability in practical applications. To address these limitations, we introduce TableEval, a new benchmark designed to evaluate LLMs on realistic TableQA tasks. Specifically, TableEval includes tables with various structures (such as concise, hierarchical, and nested tables) collected from four domains (including government, finance, academia, and industry reports). Besides, TableEval features cross-lingual scenarios with tables in Simplified Chinese, Traditional Chinese, and English. To minimize the risk of data leakage, we collect all data from recent real-world documents. Considering that existing TableQA metrics fail to capture semantic accuracy, we further propose SEAT, a new evaluation framework that assesses the alignment between model responses and reference answers at the sub-question level. Experimental results have shown that SEAT achieves high agreement with human judgment. Extensive experiments on TableEval reveal critical gaps in the ability of state-of-the-art LLMs to handle these complex, real-world TableQA tasks, offering insights for future improvements.",
+%     selected = {true}
+% }
 
 % @article{PhysRev.47.777,
 %   abbr              = {PhysRev},
