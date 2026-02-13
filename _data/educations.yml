@@ -1,0 +1,15 @@
+- degree: Ph.D. in Computer Science and Technology
+  school: School of Advanced Interdisciplinary Sciences, UCAS & Institute of Automation, CASIA
+  period: 2023.09-2028.06
+  logos:
+    - alt: School of Advanced Interdisciplinary Sciences
+      url: /assets/img/sais.png
+    - alt: CASIA
+      url: /assets/img/casia.png
+
+- degree: B.Eng. in Information Management and Information Systems
+  school: North China Electric Power University
+  period: 2019.09-2023.06
+  logos:
+    - alt: North China Electric Power University
+      url: /assets/img/North_China_Electric_Power_University_logo.png
