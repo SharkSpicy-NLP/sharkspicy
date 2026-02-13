@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: head.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Contact:yubohan23(at)mails.ucas.ac.cn</p>
+    <p>Contact:</p>
+    <p>yubohan2025(at)ia.ac.cn</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # hide social icons at the bottom of the page
