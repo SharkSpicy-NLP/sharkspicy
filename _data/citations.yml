@@ -1,13 +1,17 @@
 metadata:
-  last_updated: '2026-04-15'
+  last_updated: '2026-05-06'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
     citations: 12
     title: 'TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering'
     year: '2025'
   pPLsV2kAAAAJ:IjCSPb-OGe4C:
-    citations: 0
+    citations: 2
     title: 'Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting'
+    year: '2026'
+  pPLsV2kAAAAJ:Tyk-4Ss8FVUC:
+    citations: 0
+    title: 'From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization'
     year: '2026'
   pPLsV2kAAAAJ:UeHWp8X0CEIC:
     citations: 1
