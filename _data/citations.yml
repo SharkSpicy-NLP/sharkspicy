@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-05-06'
+  last_updated: '2026-05-13'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
-    citations: 12
+    citations: 14
     title: 'TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering'
     year: '2025'
   pPLsV2kAAAAJ:IjCSPb-OGe4C:
