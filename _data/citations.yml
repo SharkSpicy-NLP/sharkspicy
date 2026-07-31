@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-20'
+  last_updated: '2026-07-31'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
     citations: 19
@@ -25,12 +25,8 @@ papers:
     citations: 0
     title: 'STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios'
     year: '2026'
-  pPLsV2kAAAAJ:YsMSGLbcyi4C:
-    citations: 0
-    title: 'PReM: Learning What to Preserve and When to Refresh for Context Compression'
-    year: '2026'
   pPLsV2kAAAAJ:qjMakFHDy7sC:
-    citations: 14
+    citations: 37
     title: 'EvolKV: Evolutionary KV Cache Compression for LLM Inference'
     year: '2025'
   pPLsV2kAAAAJ:zYLM7Y9cAGgC:
