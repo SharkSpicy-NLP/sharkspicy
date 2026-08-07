@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-31'
+  last_updated: '2026-08-07'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
-    citations: 19
+    citations: 18
     title: 'TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering'
     year: '2025'
   pPLsV2kAAAAJ:IjCSPb-OGe4C:
-    citations: 5
+    citations: 6
     title: 'Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting'
     year: '2026'
   pPLsV2kAAAAJ:Tyk-4Ss8FVUC:
@@ -20,6 +20,10 @@ papers:
   pPLsV2kAAAAJ:W7OEmFMy1HYC:
     citations: 0
     title: 'Hetero-Designer: Automated Design of Multi-Agent Systems with Heterogeneous LLMs'
+    year: '2026'
+  pPLsV2kAAAAJ:WF5omc3nYNoC:
+    citations: 1
+    title: 'From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search'
     year: '2026'
   pPLsV2kAAAAJ:Y0pCki6q_DkC:
     citations: 0
