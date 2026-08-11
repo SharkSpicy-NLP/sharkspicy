@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎫 Attended Tencent QingYun Project Up Skyline Talent Dinner at AAAI 2026.
+🎫 Invited to Tencent QingYun Project Up Skyline Talent Dinner at AAAI 2026.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Two collaborative papers on LLM quantization are published in ACL Findings 2026.
+🎉 Three papers are accepted by ACL 2026, including one Main and two Findings papers.
