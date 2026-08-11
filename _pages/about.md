@@ -37,7 +37,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I am currently pursuing a Ph.D. in Computer Science and Technology through a joint program between <img class="inline-org-icon" src="/assets/img/sais.png" alt="SAIS"> [School of Advanced Interdisciplinary Sciences](https://sais.ucas.ac.cn/index.php/zh/) at the University of Chinese Academy of Sciences and <img class="inline-org-icon" src="/assets/img/casia.png" alt="CASIA"> [Institute of Automation, Chinese Academy of Sciences](https://ia.cas.cn/).
+I am currently pursuing a Ph.D. in Computer Science and Technology through a joint program between <img class="inline-org-icon" src="/assets/img/sais.png" alt="SAIS"> **[School of Advanced Interdisciplinary Sciences](https://sais.ucas.ac.cn/index.php/zh/)** at the University of Chinese Academy of Sciences and <img class="inline-org-icon" src="/assets/img/casia.png" alt="CASIA"> **[Institute of Automation, Chinese Academy of Sciences](https://ia.cas.cn/)**.
 
 **Research Interests:**
 
