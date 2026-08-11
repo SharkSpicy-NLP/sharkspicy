@@ -1,3 +1,3 @@
 <div class="publications">
-  {% bibliography --group_by none --query @*[collaborative=true]* %}
+  {% bibliography --group_by none --query @*[collaborative=true && hidden!=true]* %}
 </div>
