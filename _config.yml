@@ -4,7 +4,7 @@
 
 title: Bohan Yu # the website title (if blank, full name will be used instead)
 first_name: Bohan
-middle_name: 
+middle_name:
 last_name: Yu
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -328,6 +328,7 @@ filtered_bibtex_keywords:
     hal,
     html,
     inspirehep_id,
+    institutions,
     pdf,
     pmid,
     poster,
@@ -335,7 +336,9 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    tags,
     video,
+    venue,
     website,
   ]
 

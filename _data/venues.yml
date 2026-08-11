@@ -7,3 +7,19 @@
 
 "Vision":
   color: "#009f36"
+
+"AAAI":
+  url: https://aaai.org/
+  color: "#ef4444"
+
+"EMNLP":
+  url: https://aclanthology.org/events/emnlp-2025/
+  color: "#2563eb"
+
+"EMNLP-Findings":
+  url: https://aclanthology.org/events/emnlp-2025/
+  color: "#7c3aed"
+
+"Preprint":
+  url: https://arxiv.org/
+  color: "#64748b"

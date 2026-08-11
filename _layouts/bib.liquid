@@ -1,54 +1,92 @@
 ---
 ---
-<div class="row">
+{% assign venue_label = entry.venue | default: entry.abbr %}
+{% assign institution_keys = entry.institutions | default: '' | split: ',' %}
+{% assign topic_tags = entry.tags | default: '' | split: ',' %}
+
+<div class="row publication-entry align-items-start">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
+    <div class="col-12 col-md-4 col-lg-3 publication-visual">
+      {%- if venue_label -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
           {% if site.data.venues[entry.abbr].color != blank %}
             {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
-            class="badge rounded w-100"
+            class="publication-venue badge rounded"
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
           >
             {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              <a href="{{ site.data.venues[entry.abbr].url }}">{{ venue_label }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{- venue_label -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="publication-venue badge rounded">{{ venue_label }}</abbr>
         {% endif %}
       {% endif %}
-      {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+      <div class="publication-preview z-depth-1">
+        {% if entry.preview %}
+          {% if entry.preview contains '://' %}
+            <img class="preview" src="{{ entry.preview }}" alt="{{ entry.title }}">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "(max-width: 767px) 100vw, 260px"
+              class="preview"
+              zoomable=true
+              avoid_scaling=true
+              alt=entry.title
+            %}
+          {% endif %}
         {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            avoid_scaling=true
-            alt=entry.preview
-          %}
+          <div class="publication-preview-placeholder">
+            <span>{{ entry.title | strip_html | truncate: 42 }}</span>
+          </div>
         {% endif %}
-      {% endif %}
+      </div>
     </div>
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div
+    id="{{ entry.key }}"
+    class="{% if site.enable_publication_thumbnails %}col-12 col-md-8 col-lg-9 publication-content{% else %}col-sm-10 publication-content{% endif %}"
+  >
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="publication-title-row">
+      <span class="institution-icons{% unless entry.institutions %} institution-icons-empty{% endunless %}" aria-label="Institutions">
+        {% for institution_key in institution_keys %}
+          {% assign normalized_key = institution_key | strip %}
+          {% if normalized_key != '' %}
+            {% assign institution = site.data.institutions[normalized_key] %}
+            {% if institution %}
+              {% assign institution_logo = institution.logo %}
+              {% if institution_logo %}
+                {% if institution_logo contains '://' %}
+                  {% assign institution_logo_src = institution_logo %}
+                {% else %}
+                  {% assign institution_logo_src = institution_logo | relative_url %}
+                {% endif %}
+                <img src="{{ institution_logo_src }}" alt="{{ institution.name }}" title="{{ institution.name }}">
+              {% else %}
+                <span class="institution-mark" title="{{ institution.name }}">{{ institution.short | default: normalized_key }}</span>
+              {% endif %}
+            {% else %}
+              <span class="institution-mark" title="{{ normalized_key }}">{{ normalized_key | slice: 0, 2 }}</span>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </span>
+      <div class="title">{{ entry.title }}</div>
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -147,6 +185,17 @@
         </i>
       {% endif %}
     </div>
+
+    {% if entry.tags %}
+      <div class="publication-tags" aria-label="Research topics">
+        {% for tag in topic_tags %}
+          {% assign topic = tag | strip %}
+          {% if topic != '' %}
+            <span>{{ topic }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}

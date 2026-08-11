@@ -1,0 +1,18 @@
+sais:
+  name: School of Advanced Interdisciplinary Sciences, UCAS
+  short: SAIS
+  logo: /assets/img/sais.png
+
+casia:
+  name: Institute of Automation, Chinese Academy of Sciences
+  short: CASIA
+  logo: /assets/img/casia.png
+
+ncepu:
+  name: North China Electric Power University
+  short: NCEPU
+  logo: /assets/img/North_China_Electric_Power_University_logo.png
+
+baidu:
+  name: Baidu MEG
+  short: BD
