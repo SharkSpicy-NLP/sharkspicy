@@ -41,5 +41,5 @@ I am currently pursuing a Ph.D. in Computer Science and Technology through a joi
 
 **Research Interests:**
 
-- **LLM Memory and Efficient Inference:** I study KV-cache representations, external knowledge injection, and model-side memory mechanisms for efficient access, compression, and reasoning in long-context and knowledge-intensive settings. Representative works: [EvolKV](https://aclanthology.org/2025.findings-emnlp.88.pdf), [SR-KI](https://ojs.aaai.org/index.php/AAAI/article/view/40747), [PReM](https://arxiv.org/pdf/2607.14327v1).
-- **Complex Reasoning and Verifiable Evaluation for LLMs:** I build automatically generated and executable evaluation tasks for rule reasoning, table question answering, and realistic tool-use agents, with process-level verification. Representative works: [TableEval](https://aclanthology.org/2025.emnlp-main.363.pdf), [STAGE-Claw](https://arxiv.org/pdf/2606.10394).
+- 🧠 **LLM Memory and Efficient Inference** — Efficient long-context reasoning with KV-cache compression, knowledge injection, and model-side memory.
+- 🧪 **Complex Reasoning and Verifiable Evaluation** — Executable benchmarks for rule reasoning, table QA, and tool-use agents.

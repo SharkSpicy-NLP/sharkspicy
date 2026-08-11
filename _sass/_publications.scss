@@ -131,7 +131,7 @@
       .publication-title-row {
         display: flex;
         align-items: flex-start;
-        gap: 0.55rem;
+        gap: 0.28rem;
         margin-bottom: 0.35rem;
       }
 
@@ -139,14 +139,14 @@
         display: inline-flex;
         flex: 0 0 auto;
         flex-wrap: wrap;
-        gap: 0.22rem;
-        min-width: 2.05rem;
-        padding-top: 0.08rem;
+        gap: 0.18rem;
+        min-width: 1.65rem;
+        padding-top: 0.03rem;
 
         img,
         .institution-mark {
-          width: 1.35rem;
-          height: 1.35rem;
+          width: 1.55rem;
+          height: 1.55rem;
           border: 1px solid var(--global-divider-color);
           border-radius: 50%;
           background: #fff;
@@ -154,7 +154,7 @@
 
         img {
           object-fit: contain;
-          padding: 0.12rem;
+          padding: 0.1rem;
         }
 
         .institution-mark {
@@ -162,7 +162,7 @@
           align-items: center;
           justify-content: center;
           color: var(--global-theme-color);
-          font-size: 0.55rem;
+          font-size: 0.62rem;
           font-weight: 700;
           line-height: 1;
         }
@@ -351,11 +351,11 @@
         }
 
         .publication-title-row {
-          gap: 0.45rem;
+          gap: 0.25rem;
         }
 
         .institution-icons {
-          min-width: 1.75rem;
+          min-width: 1.65rem;
         }
       }
     }

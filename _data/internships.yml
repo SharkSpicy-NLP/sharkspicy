@@ -1,11 +1,11 @@
 - role: LLM Research Intern
-  organization: MEG, Baidu Inc.
+  organization: Baidu, MEG
   period: 2025.03-2025.08
   institutions: baidu
   details: Research Intern on Knowledge Integration and Long-Context LLMs.
 
 - role: NLP Research Intern
-  organization: AI R&D Center, Beijing Wenge Technology Co., Ltd.
+  organization: Beijing Wenge Technology, AI R&D Center
   period: 2024.04-2025.02
   institutions: wenge
   details: Research Intern on TableQA and Long-Context Evaluation.

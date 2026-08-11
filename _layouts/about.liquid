@@ -88,14 +88,15 @@ layout: default
                       </span>
                     {% endif %}
                     <span class="home-timeline-copy"
-                      ><strong>{{ edu.degree }}</strong>, {{ edu.school -}}
-                    </span>
+                      ><strong>{{ edu.school }}</strong></span
+                    >
                   </div>
-                  {% if edu.details -%}
-                    <ul class="home-timeline-details">
+                  <ul class="home-timeline-details">
+                    <li>{{ edu.degree }}.</li>
+                    {% if edu.details -%}
                       <li>{{ edu.details -}}</li>
-                    </ul>
-                  {%- endif %}
+                    {%- endif %}
+                  </ul>
                 </li>
               {% endfor %}
             </ul>
