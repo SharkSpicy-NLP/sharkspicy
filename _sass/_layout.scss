@@ -44,11 +44,11 @@ body.sticky-bottom-footer {
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples
 .inline-org-icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 0.95rem;
+  height: 0.95rem;
   object-fit: contain;
-  margin-right: 0.25rem;
-  vertical-align: text-bottom;
+  margin-right: 0.18rem;
+  vertical-align: -0.12rem;
 }
 
 .home-sections {
@@ -64,6 +64,79 @@ body.sticky-bottom-footer {
   .academic-activities-list {
     list-style: none;
     padding-left: 0;
+  }
+
+  .home-timeline-list {
+    padding-left: 1.25rem;
+
+    > li {
+      margin-bottom: 0.85rem;
+    }
+  }
+
+  .home-timeline-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.28rem 0.4rem;
+    min-width: 0;
+  }
+
+  .home-timeline-period {
+    color: var(--global-text-color);
+    white-space: nowrap;
+  }
+
+  .home-timeline-separator {
+    color: var(--global-text-color-light);
+    font-weight: 700;
+  }
+
+  .home-timeline-copy {
+    min-width: 0;
+  }
+
+  .home-inline-icons {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.3rem;
+
+    img,
+    .home-inline-icon-mark {
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+      max-width: 1.2rem;
+      max-height: 1.2rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    img {
+      object-fit: contain;
+      padding: 0.1rem;
+    }
+
+    .home-inline-icon-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--global-theme-color);
+      font-size: 0.52rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  .home-timeline-details {
+    margin: 0.35rem 0 0.05rem 1.35rem;
+    padding-left: 1rem;
+    list-style: circle;
+
+    li {
+      margin-bottom: 0;
+    }
   }
 
   .home-entry-with-icons {

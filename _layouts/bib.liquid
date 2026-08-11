@@ -9,16 +9,7 @@
     <div class="col-12 col-md-4 col-lg-3 publication-visual">
       {%- if venue_label -%}
         {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="publication-venue badge rounded"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
+          <abbr class="publication-venue badge rounded">
             {% if site.data.venues[entry.abbr].url %}
               <a href="{{ site.data.venues[entry.abbr].url }}">{{ venue_label }}</a>
             {% else %}

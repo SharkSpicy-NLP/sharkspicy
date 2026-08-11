@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-07-15 15:59:00-0400
+date: 2026-01-20 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-📝 PReM is released on arXiv.
+🎫 Attended Tencent QingYun Project Up Skyline Talent Dinner at AAAI 2026.
