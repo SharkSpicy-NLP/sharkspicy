@@ -64,9 +64,7 @@ layout: default
       <!-- Educations -->
       {% if page.educations %}
         <section class="home-section">
-          <h2 class="home-section-title">
-            🎓 Educations
-          </h2>
+          <h2 class="home-section-title">🎓 Educations</h2>
           {% if site.data.educations and site.data.educations.size > 0 %}
             <ul>
               {% for edu in site.data.educations %}
@@ -84,13 +82,16 @@ layout: default
                           src="{{ logo_src }}"
                           alt="{{ logo.alt }}"
                           style="height: 1.2rem; width: 1.2rem; object-fit: contain; margin-right: 0.35rem; vertical-align: text-bottom;"
-                        />
+                        >
                       {% endfor %}
                     </span>
                   {% endif %}
                   <strong>{{ edu.degree }}</strong>, {{ edu.school }}
                   {% if edu.period %} ({{ edu.period }}){% endif %}
-                  {% if edu.details %}<br />{{ edu.details }}{% endif %}
+                  {% if edu.details -%}
+                    <br>
+                    {{ edu.details -}}
+                  {%- endif %}
                 </li>
               {% endfor %}
             </ul>
@@ -111,9 +112,7 @@ layout: default
       <!-- Collaborative Publications -->
       {% if page.collaborative_papers %}
         <section class="home-section">
-          <h2 class="home-section-title">
-            🤝 Collaborative Publications
-          </h2>
+          <h2 class="home-section-title">🤝 Collaborative Publications</h2>
           {% include collaborative_papers.liquid %}
         </section>
       {% endif %}
@@ -121,16 +120,17 @@ layout: default
       <!-- Internships -->
       {% if page.internships %}
         <section class="home-section">
-          <h2 class="home-section-title">
-            💼 Internships
-          </h2>
+          <h2 class="home-section-title">💼 Internships</h2>
           {% if site.data.internships and site.data.internships.size > 0 %}
             <ul>
               {% for internship in site.data.internships %}
                 <li>
                   <strong>{{ internship.role }}</strong>, {{ internship.organization }}
                   {% if internship.period %} ({{ internship.period }}){% endif %}
-                  {% if internship.details %}<br />{{ internship.details }}{% endif %}
+                  {% if internship.details -%}
+                    <br>
+                    {{ internship.details -}}
+                  {%- endif %}
                 </li>
               {% endfor %}
             </ul>
@@ -141,9 +141,7 @@ layout: default
       <!-- Honors and Awards -->
       {% if page.honors_awards %}
         <section class="home-section">
-          <h2 class="home-section-title">
-            🏆 Honors and Awards
-          </h2>
+          <h2 class="home-section-title">🏆 Honors and Awards</h2>
           {% if site.data.honors_awards and site.data.honors_awards.size > 0 %}
             <ul>
               {% for award in site.data.honors_awards %}
@@ -151,7 +149,10 @@ layout: default
                   <strong>{{ award.title }}</strong>
                   {% if award.organization %}, {{ award.organization }}{% endif %}
                   {% if award.period %} ({{ award.period }}){% endif %}
-                  {% if award.details %}<br />{{ award.details }}{% endif %}
+                  {% if award.details -%}
+                    <br>
+                    {{ award.details -}}
+                  {%- endif %}
                 </li>
               {% endfor %}
             </ul>
