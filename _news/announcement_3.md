@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎫 Invited to Tencent QingYun Project Up, "Stars of the Future: Technology Exchange Exhibition".
+🎫 Invited to Tencent Project Up (QingYun), "Stars of the Future: Technology Exchange Exhibition".
