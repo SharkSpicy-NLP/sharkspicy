@@ -7,7 +7,7 @@ ninja.data = [{
     title: "about",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/sharkspicy/";
+      window.location.href = "/";
     },
   },{id: "news-two-papers-are-accepted-by-emnlp-2025",
           title: '🎉 Two papers are accepted by EMNLP 2025.',
