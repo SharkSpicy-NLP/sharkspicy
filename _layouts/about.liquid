@@ -142,7 +142,7 @@ layout: default
                             {% else %}
                               {% assign institution_logo_src = institution_logo | relative_url %}
                             {% endif %}
-                            <img src="{{ institution_logo_src }}" alt="{{ institution.name }}" title="{{ institution.name }}">
+                            <img src="{{ institution_logo_src }}" alt="{{ institution.name }}" title="{{ institution.name }}" width="22" height="22">
                           {% else %}
                             <span class="home-entry-icon-mark" title="{{ institution.name }}">{{ institution.short | default: normalized_key }}</span>
                           {% endif %}

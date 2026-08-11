@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 One paper is accepted by AAAI 2026.
+🎉 SR-KI is accepted by AAAI 2026.
