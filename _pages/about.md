@@ -16,6 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 educations: true
 collaborative_papers: true
 internships: true
+academic_activities: true
 honors_awards: true
 social: false # hide social icons at the bottom of the page
 

@@ -12,6 +12,14 @@
   url: https://aaai.org/
   color: "#ef4444"
 
+"ACL":
+  url: https://aclanthology.org/events/acl-2026/
+  color: "#dc2626"
+
+"ACL-Findings":
+  url: https://aclanthology.org/events/acl-2026/
+  color: "#16a34a"
+
 "EMNLP":
   url: https://aclanthology.org/events/emnlp-2025/
   color: "#2563eb"

@@ -122,15 +122,68 @@ layout: default
         <section class="home-section">
           <h2 class="home-section-title">💼 Internships</h2>
           {% if site.data.internships and site.data.internships.size > 0 %}
-            <ul>
+            <ul class="home-entry-list">
               {% for internship in site.data.internships %}
+                {% assign internship_institution_keys = internship.institutions | default: '' | split: ',' %}
+                <li class="home-entry-with-icons">
+                  <span
+                    class="home-entry-icon-slot{% unless internship.institutions %} home-entry-icon-slot-empty{% endunless %}"
+                    aria-label="Organizations"
+                  >
+                    {% for institution_key in internship_institution_keys %}
+                      {% assign normalized_key = institution_key | strip %}
+                      {% if normalized_key != '' %}
+                        {% assign institution = site.data.institutions[normalized_key] %}
+                        {% if institution %}
+                          {% assign institution_logo = institution.logo %}
+                          {% if institution_logo %}
+                            {% if institution_logo contains '://' %}
+                              {% assign institution_logo_src = institution_logo %}
+                            {% else %}
+                              {% assign institution_logo_src = institution_logo | relative_url %}
+                            {% endif %}
+                            <img src="{{ institution_logo_src }}" alt="{{ institution.name }}" title="{{ institution.name }}">
+                          {% else %}
+                            <span class="home-entry-icon-mark" title="{{ institution.name }}">{{ institution.short | default: normalized_key }}</span>
+                          {% endif %}
+                        {% else %}
+                          <span class="home-entry-icon-mark" title="{{ normalized_key }}">{{ normalized_key | slice: 0, 2 }}</span>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
+                  <span class="home-entry-copy">
+                    <strong>{{ internship.role }}</strong>, {{ internship.organization }}
+                    {% if internship.period %} ({{ internship.period }}){% endif %}
+                    {% if internship.details -%}
+                      <br>
+                      {{ internship.details -}}
+                    {%- endif %}
+                  </span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </section>
+      {% endif %}
+
+      <!-- Academic Activities -->
+      {% if page.academic_activities %}
+        <section class="home-section">
+          <h2 class="home-section-title">🎫 Academic Activities</h2>
+          {% if site.data.academic_activities and site.data.academic_activities.size > 0 %}
+            <ul class="academic-activities-list">
+              {% for activity in site.data.academic_activities %}
                 <li>
-                  <strong>{{ internship.role }}</strong>, {{ internship.organization }}
-                  {% if internship.period %} ({{ internship.period }}){% endif %}
-                  {% if internship.details -%}
-                    <br>
-                    {{ internship.details -}}
-                  {%- endif %}
+                  <strong>{{ activity.period }}</strong>, {{ activity.location }},
+                  <strong>{{ activity.organization }}</strong>
+                  {%- if activity.event -%}
+                    , "{{ activity.event }}"
+                  {%- endif -%}
+                  {%- if activity.at %}
+                    at {{ activity.at }}
+                  {%- endif -%}
+                  .
                 </li>
               {% endfor %}
             </ul>

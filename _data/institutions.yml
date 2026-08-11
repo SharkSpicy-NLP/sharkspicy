@@ -14,5 +14,50 @@ ncepu:
   logo: /assets/img/North_China_Electric_Power_University_logo.png
 
 baidu:
-  name: Baidu MEG
+  name: Baidu
   short: BD
+  logo: /assets/img/institution_icons/baidu.png
+
+ernie:
+  name: Baidu ERNIE
+  short: ERNIE
+  logo: /assets/img/institution_icons/wenxin.svg
+
+alibaba:
+  name: Alibaba
+  short: Ali
+  logo: /assets/img/institution_icons/alibaba.svg
+
+ali:
+  name: Alibaba
+  short: Ali
+  logo: /assets/img/institution_icons/alibaba.svg
+
+qwen:
+  name: Alibaba Qwen
+  short: Qwen
+  logo: /assets/img/institution_icons/qwen.svg
+
+meituan:
+  name: Meituan
+  short: MT
+  logo: /assets/img/institution_icons/meituan.png
+
+longcat:
+  name: Meituan LongCat
+  short: LC
+  logo: /assets/img/institution_icons/longcat.svg
+
+tencent:
+  name: Tencent
+  short: Tencent
+  logo: /assets/img/institution_icons/tencent.svg
+
+xhumanoid:
+  name: X-Humanoid
+  short: XH
+  logo: /assets/img/institution_icons/x-humanoid.svg
+
+wenge:
+  name: Beijing Wenge Technology Co., Ltd.
+  short: WG
