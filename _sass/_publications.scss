@@ -86,9 +86,11 @@
         display: block;
         width: 100%;
         overflow: hidden;
+        box-sizing: border-box;
         border: 1px solid var(--global-divider-color);
         border-radius: 6px;
         background: #fff;
+        padding-top: 2rem;
         line-height: 0;
 
         figure,
