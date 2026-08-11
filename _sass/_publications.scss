@@ -64,9 +64,9 @@
         width: auto;
         padding: 0.4rem 0.8rem;
         border-radius: 2px !important;
-        background: #ef493e;
+        background: var(--global-theme-color);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-        color: #fff !important;
+        color: var(--global-hover-text-color) !important;
         font-size: 0.85rem;
         font-weight: 700;
         line-height: 1.2;
@@ -74,7 +74,7 @@
         white-space: normal;
 
         a {
-          color: #fff !important;
+          color: var(--global-hover-text-color) !important;
 
           &:hover {
             text-decoration: none;
