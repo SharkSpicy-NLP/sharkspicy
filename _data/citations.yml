@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-11'
+  last_updated: '2026-08-17'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
     citations: 18
@@ -10,7 +10,7 @@ papers:
     title: 'Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting'
     year: '2026'
   pPLsV2kAAAAJ:Tyk-4Ss8FVUC:
-    citations: 1
+    citations: 2
     title: 'From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization'
     year: '2026'
   pPLsV2kAAAAJ:UeHWp8X0CEIC:
@@ -33,7 +33,11 @@ papers:
     citations: 37
     title: 'EvolKV: Evolutionary KV Cache Compression for LLM Inference'
     year: '2025'
-  pPLsV2kAAAAJ:zYLM7Y9cAGgC:
+  pPLsV2kAAAAJ:ufrVoPGSRksC:
     citations: 0
+    title: 'Quantization Degradation in Large Language Models: A Signal-Noise Perspective'
+    year: '2026'
+  pPLsV2kAAAAJ:zYLM7Y9cAGgC:
+    citations: 1
     title: Task-Stratified Knowledge Scaling Laws for Post-Training Quantized Large Language Models
     year: '2026'
