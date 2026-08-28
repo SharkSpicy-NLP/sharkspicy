@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-08-17'
+  last_updated: '2026-08-28'
 papers:
   pPLsV2kAAAAJ:2osOgNQ5qMEC:
-    citations: 18
+    citations: 21
     title: 'TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering'
     year: '2025'
   pPLsV2kAAAAJ:IjCSPb-OGe4C:
-    citations: 7
+    citations: 10
     title: 'Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting'
     year: '2026'
   pPLsV2kAAAAJ:Tyk-4Ss8FVUC:
@@ -30,7 +30,7 @@ papers:
     title: 'STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios'
     year: '2026'
   pPLsV2kAAAAJ:qjMakFHDy7sC:
-    citations: 37
+    citations: 38
     title: 'EvolKV: Evolutionary KV Cache Compression for LLM Inference'
     year: '2025'
   pPLsV2kAAAAJ:ufrVoPGSRksC:
