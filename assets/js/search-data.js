@@ -24,6 +24,9 @@ ninja.data = [{
           section: "News",},{id: "news-three-papers-are-accepted-by-acl-2026-including-one-main-and-two-findings-papers",
           title: '🎉 Three papers are accepted by ACL 2026, including one Main and two...',
           description: "",
+          section: "News",},{id: "news-two-papers-are-accepted-by-emnlp-2026-beyond-factual-knowledge-and-ruleweaver",
+          title: '🎉 Two papers are accepted by EMNLP 2026: Beyond Factual Knowledge and RuleWeaver....',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
