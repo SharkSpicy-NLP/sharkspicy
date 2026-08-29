@@ -41,5 +41,5 @@ I am currently pursuing a Ph.D. in Computer Science and Technology through a joi
 
 **Research Interests:**
 
-- 🗃️ **LLM Memory and Efficient Inference** — Efficient long-context reasoning with KV-cache & memory compression, knowledge injection.
+- 🗃️ **LLM Memory and Efficient Inference** — Efficient long-context reasoning with KV-cache & memory compression, knowledge integration.
 - 🧭 **Complex Reasoning and Verifiable Evaluation** — Executable benchmarks for rule reasoning, table QA, and tool-use agents.
